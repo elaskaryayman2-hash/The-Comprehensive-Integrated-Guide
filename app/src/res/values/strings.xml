@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Medical Finder</string>
+    <string name="ambulance">Ambulance (123)</string>
+    <string name="police">Police (122)</string>
+    <string name="fire">Fire Dept (180)</string>
+    <string name="search_doctor_hint">Search for a doctor or specialty...</string>
+    <string name="city_hint">Enter City (e.g., Cairo, Luxor)</string>
+    <string name="distance_label">Search Radius: %1$d km</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_nearest_hospital">Nearest Hospital</string>
+    <string name="btn_nearest_pharmacy">Nearest Pharmacy</string>
+    <string name="switch_lang">العربية</string>
+</resources>
