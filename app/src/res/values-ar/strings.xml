@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">دليل الخدمات الطبية</string>
+    <string name="ambulance">الإسعاف (123)</string>
+    <string name="police">النجدة (122)</string>
+    <string name="fire">المطافئ (180)</string>
+    <string name="search_doctor_hint">ابحث عن طبيب أو تخصص...</string>
+    <string name="city_hint">أدخل اسم المدينة...</string>
+    <string name="distance_label">نطاق المسافة: %1$d كم</string>
+    <string name="btn_search">بحث</string>
+    <string name="btn_nearest_hospital">أقرب مستشفى</string>
+    <string name="btn_nearest_pharmacy">أقرب صيدلية</string>
+    <string name="switch_lang">English</string>
+</resources>
