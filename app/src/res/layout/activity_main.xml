@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- شريط أرقام الطوارئ العلوي + زر اللغة -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnAmbulance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D32F2F"
+            android:text="@string/ambulance"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnPolice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#1976D2"
+            android:text="@string/police"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnFire"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#F57C00"
+            android:text="@string/fire"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/switch_lang"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- خانة البحث عن طبيب -->
+    <EditText
+        android:id="@+id/etDoctorSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/search_doctor_hint"
+        android:inputType="text" />
+
+    <!-- خانة إدراج المدينة -->
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/city_hint"
+        android:inputType="text" />
+
+    <!-- تحديد المسافة من 1 إلى 20 كم -->
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Search Radius: 5 km"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBarDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="19"
+        android:progress="4" /> <!-- القيمة الفعلية = progress + 1 (من 1 إلى 20) -->
+
+    <!-- أزرار البحث السريع -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSearchDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_search" />
+
+        <Button
+            android:id="@+id/btnHospital"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/btn_nearest_hospital" />
+
+        <Button
+            android:id="@+id/btnPharmacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/btn_nearest_pharmacy" />
+    </LinearLayout>
+
+    <!-- خريطة جوجل -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
