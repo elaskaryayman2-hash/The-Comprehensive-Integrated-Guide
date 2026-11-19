@@ -1,0 +1,13 @@
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+android/local.properties
+.env
+*.jks
+*.keystore
+.firebase/
+.venv/
+__pycache__/
